@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:appwrite/appwrite.dart';
 import 'package:appwrite/models.dart';
 import 'package:provider/provider.dart';
@@ -138,6 +137,7 @@ Future<bool> loginWithOtp({required String otp, required String userId}) async {
     final Session session =
         await account.updatePhoneSession(userId: userId, secret: otp);
     print(session.userId);
+    print(otp.toString());
     return true;
   } catch (e) {
     print("error on login with otp :$e");

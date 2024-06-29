@@ -19,7 +19,7 @@ class _PhoneLoginState extends State<PhoneLogin> {
   TextEditingController _phoneNumberController = TextEditingController();
   TextEditingController _otpController = TextEditingController();
 
-  String countryCode = "+91";
+  String countryCode = "+92";
 
   void handleOtpSubmit(String userId, BuildContext context) {
     if (_formKey1.currentState!.validate()) {
@@ -88,7 +88,7 @@ class _PhoneLoginState extends State<PhoneLogin> {
                                   print(value.dialCode);
                                   countryCode = value.dialCode!;
                                 },
-                                initialSelection: "IN",
+                                initialSelection: "PK",
                               ),
                               labelText: "Enter you phone number",
                               border: OutlineInputBorder(
